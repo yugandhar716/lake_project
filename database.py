@@ -38,7 +38,7 @@ def create_table_and_insert_records(file_paths):
             print(f"Error while reading file {file_path}: {e}")
             continue
 
-    # Close the cursor and commit the transaction
+    # Close the cursor and commit
     cursor.close()
     conn.commit()
 
